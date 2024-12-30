@@ -1,0 +1,3114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* banner */
+
+.banner{
+    background-image: linear-gradient(76deg, rgba(193, 195, 204, 0.83) 35%, rgba(193, 195, 204, 0.28) 65%), url("./images/banner-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 86vh;
+    margin: 40px 40px 0px 40px;
+    position: relative;
+    padding-left:5% ;
+    padding-right: 5%;
+}
+
+/* Banner navigation bar */
+
+/* logo */
+
+.navbar{
+   padding-top: 35px;
+   position: relative;
+   z-index: 100;
+}
+
+.logo{ 
+   width: 210px;
+   position: absolute;
+   z-index: 1;
+    padding-left: 50px;
+    padding-right: 50px;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E47312;
+    cursor: pointer;
+}
+.logo .logo-container{
+    width: 100%;
+    text-align: center;
+}
+
+.logo .logo-container img{
+    width: 110px;
+    
+}
+
+/* navbar-2 */
+
+.navbar-2{
+     display: none;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #FFFFFF;
+}
+
+.logo-2{
+    width: 200px;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E47312;
+    cursor: pointer;
+}
+
+
+.logo-2 .logo-container{
+    width: 100%;
+    text-align: center;
+}
+
+.logo-2 .logo-container img{
+    width: 100px;
+}
+
+.burger{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.burger .bar{
+    width: 40px;
+    height: 3px;
+    background-color: black;
+    margin-bottom: 12px;
+    margin-right: 20px;
+}
+
+/* nav-items */
+
+
+.nav-items{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    z-index: 0;
+    background-color: #FFFFFF;
+    
+}
+
+.nav-items a{
+    position: relative;
+    padding: 42px 14px;
+    text-decoration: none;
+    
+}
+
+
+.nav-items a div{
+    padding: 4px 0px;
+    color: black;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.nav-items a div #nav-imp{
+    color: #E47312;
+}
+
+
+
+.nav-items .page-down{
+    padding: 42px 14px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+    
+    
+}
+.nav-items .page-down .name{
+    padding: 4px 0px;
+    margin-right: 4px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+.nav-items .page-down .img-con {
+    width: 7px;
+    padding: 4px 0px;
+}
+
+
+
+.nav-items .page-down .img-con > img{
+    width: 100%;
+}
+
+.nav-items .get-free{
+    padding: 48px 37px;
+    margin-left:  25px; 
+    background-color: #E47312;
+    color: #FFFFFF;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.nav-items .get-free  span{
+    color: #FFFFFF;
+}
+
+/*  nav-items a after & before */
+
+.nav-items a::before{
+    content: "";
+    width: 2px;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 0px;
+   background-color: #E47312;
+   transition: height 0.3s ease-in-out;
+
+}
+
+
+.nav-items a::after{
+    content: "";
+    width: 2px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 0px;
+   background-color: #E47312;
+   transition: height 0.3s ease-in-out;
+
+}
+
+.nav-items a:hover::before{
+    height: 40px;
+}
+
+.nav-items a:hover::after{
+    height: 40px;
+}
+
+
+.nav-items .page-down::before{
+    content: "";
+    width: 2px;
+    position: absolute;
+    top:0;
+    left: 0;
+    right: -1120px;
+    margin: 0 auto;
+    height: 0px;
+   background-color: #E47312;
+   transition: height 0.3s ease-in-out;
+}
+
+.nav-items .page-down::after{
+    content: "";
+    width: 2px;
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: -1120px;
+    margin: 0 auto;
+    height: 0px;
+   background-color: #E47312;
+   transition: height 0.3s ease-in-out;
+
+}
+
+.nav-items .page-down:hover::before{
+    height: 40px;
+}
+
+.nav-items .page-down:hover::after{
+    height: 40px;
+}
+
+.nav-items .get-free:hover{
+    background-color: #e88c3b;
+}
+
+/* banner heading */
+
+.banner-heading{
+padding: 7.5% 90px;
+}
+
+.banner .main-heading{
+margin-bottom: 6px;
+}
+
+.banner .main-heading h1{
+    font-size: 80px;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-family: 'Hind Madurai', sans-serif;
+    text-transform: uppercase;
+}
+
+.banner .head-para{
+    margin-bottom: 35px;
+}
+
+.banner .head-para p{
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: 'Hind Madurai', sans-serif;
+    text-transform: uppercase;
+}
+.banner .head-button button{
+    background-color: #E47312;
+    padding: 21px 47px;
+    font-size: 15px;
+    color: #FFFFFF;
+    font-weight: 400;
+    font-family: 'Hind Madurai', sans-serif;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.banner .head-button button:hover{
+    background-color: #e88c3b;
+}
+
+/* banner vertical row */
+
+
+.banner .vertical-row{
+    padding: 15px;
+    background-color: #0A1229;
+    position: absolute;
+    right: 0;
+    top:330px;
+}
+
+.banner .vertical-row .v-item{
+    display: flex;
+    align-items: center;
+    padding: 13px 5px;
+    border-bottom: 1px solid rgb(91, 89, 89);
+}
+.banner .vertical-row .v-item a{
+    padding: 7px;
+}
+
+.banner .vertical-row .v-item a i{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+.banner .vertical-row .extra{
+    border-bottom: none;
+}
+
+/* banner info */
+
+.banner .info{
+  width: 66%;
+   background-image:  linear-gradient(186deg, #e47312, #ff6361);
+   position: absolute;
+   right: 0;
+  top: 605px;
+   padding: 17px 100px 0px 50px;
+}
+
+.banner .info-wrapper{
+    display: flex;
+    width: 100%;
+    padding: 30px 0px;
+    justify-content: end;
+    align-items: center;
+}
+
+.banner .info-wrapper .info-item{
+    padding: 27px 50px 27px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .info-wrapper .info-1{
+    padding-right: 125px;
+ }
+ 
+
+.banner .info-wrapper .info-2{
+   padding-right:25px;
+}
+
+
+.banner .info-wrapper .info-item .icon{
+    font-size: 30px;
+    color: #FFFFFF;
+    margin-bottom: 13px;
+}
+
+.banner .info-wrapper .info-item .heading{
+    font-size: 20px;
+   color: #FFFFFF;
+   font-family: 'Hind Madurai', sans-serif;
+   margin-bottom: 10px;
+}
+
+.banner .info-wrapper .info-item .details-1{
+    font-size: 22px;
+    color: #dad6d6;
+    font-family: 'Hind Madurai', sans-serif;
+    margin-bottom: 8px;
+    font-weight: 400;
+}
+
+.banner .info-wrapper .info-item .details-2{
+    font-size: 22px;
+    color: #dad6d6;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 400;
+}
+
+/* services section */
+
+.services{
+    margin: 100px 40px 0px 40px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 50px;
+}
+
+/*  services of sub-services */
+
+.services .sub-services{
+  padding-top: 60px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.services .sub-services .services-header{
+padding: 10px 0px;
+}
+
+.services .sub-services .services-header h1{
+    font-size: 160px;
+    font-weight: 400;
+    font-family: 'Hind Madurai', sans-serif;
+    color: rgb(211, 211, 211,0.2);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.services .sub-services .services-header h2{
+    font-size: 47px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 172px;
+    left: 80px;   
+}
+
+.services .sub-services .view{
+margin-top: 45px;
+margin-right: 100px;
+position: relative;
+text-align: center;
+}
+
+.services .sub-services .view p{
+    font-size: 21px;
+    font-weight: 400;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+    color: #716f6f;
+    cursor: pointer;
+}
+
+.services .sub-services .view p::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    background-color: #E47312;
+    opacity: 0;
+}
+
+.services .sub-services .view:hover p::after{
+    opacity: 1;
+}
+
+/* services  of professions */
+
+.profession{
+  margin-bottom: 100px;  
+}
+
+.professions-wrapper{
+display: flex;
+width: 97%;
+padding-left: 60px ;
+}
+
+.professions-wrapper .profession{
+    width: 25%;
+    margin-right: 40px;
+}
+
+.professions-wrapper .profession .prof-logo{
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.professions-wrapper .profession .prof-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.professions-wrapper .profession .prof-sub-heading{
+    margin-bottom: 18px;
+}
+
+.professions-wrapper .profession .prof-sub-heading p{
+    font-size: 18px;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.professions-wrapper .profession .prof-info{
+    margin-bottom: 30px;
+}
+
+.professions-wrapper .profession .prof-info p{
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: rgb(138, 135, 135);
+    line-height: 2;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.professions-wrapper .profession .click{
+    margin-bottom: 50px;
+    width: 40%;
+}
+
+.professions-wrapper .profession .click p{
+    font-size: 16px;
+    color: rgb(138, 135, 135);
+    text-transform: uppercase;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+
+.professions-wrapper .profession .click p::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    background-color: #E47312;
+    opacity: 0;
+}
+
+.professions-wrapper .profession .click:hover p::after{
+    opacity: 1;
+}
+
+
+/*    services of about  */
+
+.about{
+    display: flex;
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.about .img-container {
+    width: 50%;
+    padding-top: 100px;
+}
+
+.about .img-container .img-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.about .img-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+
+.about .about-info{
+    width: 50%;
+    padding-left: 100px;
+}
+
+.about .about-info .about-i-heading{
+    position: relative;
+}
+
+.about .about-info .about-i-heading h1{
+    font-size: 145px;
+    font-weight: 600;
+    font-family: 'Hind Madurai', sans-serif;
+    color: rgb(211, 211, 211,0.2);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.about .about-info .about-i-heading h2{
+    font-size: 47px;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 90px;
+    left: 70px;
+}
+.about .about-info .about-i-p1{
+    padding-left: 70px;
+    margin-bottom: 20px;
+}
+
+.about .about-info .about-i-p1 p{
+    font-size: 19px;
+    color: rgb(138, 135, 135);
+    line-height: 1.5;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.about .about-info .about-i-p2{
+    padding-left: 70px;
+    margin-bottom: 50px;
+}
+
+.about .about-info .about-i-p2 p{
+    font-size: 19px;
+    color: rgb(138, 135, 135);
+    line-height: 1.5;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+}
+
+.about .about-info .about-i-click{
+    width: 31%;
+    padding-left: 70px;
+}
+
+.about .about-info .about-i-click p{
+    font-size: 16px;
+    color: rgb(138, 135, 135);
+    text-transform: uppercase;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+
+.about .about-info .about-i-click p::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    right: 0;
+    background-color: #E47312;
+    opacity: 0;
+}
+
+.about .about-info .about-i-click:hover p::after{
+    opacity: 1;
+}
+
+/*  services of  work-expo*/
+
+.work-expo{
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-top: 120px;
+}
+
+.work-expo .work-expo-container{
+    display: flex;
+    width: 100%;
+}
+.work-expo .work-expo-container .work-info{
+    padding: 0px 10px;
+    width: 24%;
+}
+
+.work-expo .work-expo-container .work-info .work-wrapper{
+    padding-right: 100px;
+}
+
+.work-expo .work-expo-container .work-info .work-wrapper .work-no{
+    margin-bottom: 15px;
+}
+
+.work-expo .work-expo-container .work-info .work-wrapper .work-no p{
+    font-size: 70px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 600;
+    color: #E47312;
+}
+
+.work-expo .work-expo-container .work-info .work-wrapper .work-details{
+    margin-bottom: 15px; 
+}
+
+.work-expo .work-expo-container .work-info .work-wrapper .work-details p{
+    font-size: 18px;
+    color: rgb(138, 135, 135);
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+}
+
+/* projects section */
+
+.Projects{
+    margin: 0px 40px 0px 40px;
+    background-color: #F7F8FC;
+}
+
+.Projects .projects-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 120px;
+   padding-top: 50px;
+   position: relative;
+   margin-bottom: 90px;
+}
+
+.Projects .projects-heading .project-ph{
+    position: relative;
+}
+
+.Projects .projects-heading .project-ph > h1{
+    font-size: 155px;
+    font-weight: 600;
+    font-family: 'Hind Madurai', sans-serif;
+    color: rgb(211, 211, 211,0.2);
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+.Projects .projects-heading .project-ph > h2{
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 95px;
+    left: 70px;  
+}
+
+.Projects .projects-heading .view{
+    margin-top: 20px;
+}
+.Projects .projects-heading .view p{
+    font-size: 16px;
+    color: rgb(138, 135, 135);
+    text-transform: uppercase;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+
+.Projects .projects-heading .view p::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: #E47312;
+    opacity: 0;
+}
+
+.Projects .projects-heading .view:hover p::after{
+    opacity: 1;
+}
+
+/* projects look */
+
+.view-projects{
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    margin:  0 auto;
+}
+
+
+.view-projects .vp-item{
+    width: 32%;
+    height: 515px; 
+    position: relative;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+
+.view-projects .vp-item .img-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.view-projects .vp-item .img-wrapper img{
+    width: 100%;
+    height: 100%;
+}
+
+.view-projects .vp-item .img-on-item{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.view-projects .vp-item .vp-hover{
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background-image: linear-gradient(230deg,#E47312,#FC6558);
+    position: absolute;
+    top: 210px;
+    left: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.view-projects .vp-item .vp-hover p{
+    font-size: 20px;
+    color: #FFFFFF;
+    margin-bottom: 3px;
+}
+
+.view-projects .vp-item:hover .img-on-item{
+    opacity: 0.4;
+}
+
+.view-projects .vp-item:hover .vp-hover{
+    opacity: 1;
+}
+
+/* banner-2 */
+
+.banner-2{
+    height: 44vh;
+    background-image:  linear-gradient(72deg, #e47312, rgba(255, 99, 97, 0.78)), url("./images/banner-2.jpg");
+    padding: 100px 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin-bottom: 90px;
+}
+
+.banner-2 .heading{
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.banner-2 .heading h2{
+    font-size: 50px;
+    text-transform: uppercase;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.banner-2 .quote{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.banner-2 .quote p{
+    font-size: 22px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;  
+    opacity: 0.7;
+    word-spacing: 1px;
+}
+
+.banner-2 .click-h{
+    text-align: center;
+    width: 9%;
+    margin: 0 auto;
+    position: relative;
+    cursor: pointer;
+}
+
+.banner-2 .click-h p{
+    font-size: 20px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 400;
+    color: #FFFFFF;  
+    text-transform: uppercase;
+
+}
+
+.banner-2 .click-h p::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: #FFFFFF;
+    opacity: 0;
+}
+
+.banner-2 .click-h:hover p::after{
+    opacity: 1;
+}
+
+/* professionals */
+
+.professionals{
+    padding: 0px 120px 0px 70px;
+    margin-bottom: 120px;
+}
+
+.professionals .prof-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;   
+}
+
+.professionals .prof-heading .prof-hp-1{
+    position: relative;
+}
+
+
+.professionals .prof-heading .prof-hp-1 h1{
+    font-size: 155px;
+    font-weight: 600;
+    font-family: 'Hind Madurai', sans-serif;
+    color: rgb(211, 211, 211,0.2);
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+.professionals .prof-heading .prof-hp-1 h2{
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 90px;
+    left: 80px;
+}
+
+.professionals .prof-heading .prof-hp-2{
+    margin-top: 22px;
+    margin-right: 40px;
+}
+
+.professionals .prof-heading .prof-hp-2 p{
+    font-size: 16px;
+    color: rgb(138, 135, 135);
+    text-transform: uppercase;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+    position: relative;
+    cursor: pointer;
+}
+
+.professionals .prof-heading .prof-hp-2 p::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: #E47312;
+    opacity: 0;
+}
+
+.professionals .prof-heading .prof-hp-2:hover p::after{
+    opacity: 1;
+}
+
+/* professionals view */
+
+.professionals-view{
+    padding: 0px 40px 0px 77px;
+}
+
+.professionals-view .pfv-container{
+    width: 100%;
+    display: flex;
+}
+
+.professionals-view .pfv-container .pfv-wrapper{
+    width: 24%;
+    margin-right: 40px;
+    position: relative;
+}
+
+.professionals-view .pfv-container .pfv-wrapper .pfv-img-wrapper-1{
+    background-image: url("./images/team-1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+
+.professionals-view .pfv-container .pfv-wrapper .pfv-img-wrapper-2{
+    background-image: url("./images/team-2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+
+.professionals-view .pfv-container .pfv-wrapper .pfv-img-wrapper-3{
+    background-image: url("./images/team-3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+
+.professionals-view .pfv-container .pfv-wrapper .pfv-img-wrapper-4{
+    background-image: url("./images/team-4.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+}
+
+.professionals-view .pfv-container .pfv-wrapper .pfv-info{
+    background-color: #FFFFFF;
+}
+
+.professionals-view .pfv-container .pfv-wrapper .pfv-info > .pfv-name{
+    padding-top: 27px;
+    padding-left: 35px;
+}
+
+.professionals-view .pfv-container .pfv-wrapper .pfv-info > .pfv-name p{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 600;
+}
+
+.professionals-view .pfv-container .pfv-wrapper .pfv-info > .pfv-post{
+    padding-top: 10px;
+    padding-left: 35px;
+    padding-bottom: 40px;
+}
+
+.professionals-view .pfv-container .pfv-wrapper .pfv-info > .pfv-post p{
+    font-size: 17px;
+    text-transform: lowercase;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+    font-weight: 400;
+    color: rgb(138, 135, 135);
+}
+
+.professionals-view .pfv-container .pfv-wrapper .pfv-vertical-row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   position: absolute;
+    right: 0;
+    bottom: 0; 
+}
+
+.professionals-view .pfv-container .pfv-wrapper .pfv-vertical-row .row-wrapper{
+    padding: 13px;
+    background-color: #E47312;
+}
+
+.professionals-view .pfv-container .pfv-wrapper .pfv-vertical-row .pfv-item{
+    width: 20px;
+    height: 20px;
+    padding: 20px 13px;
+    border-bottom: 1px solid rgba(244, 242, 242, 0.5);
+    box-sizing: content-box;
+} 
+
+.professionals-view .pfv-container .pfv-wrapper .pfv-vertical-row .pfv-2{
+    border: none;
+}
+
+.professionals-view .pfv-container .pfv-wrapper .pfv-vertical-row .pfv-item > img{
+    width: 100%;
+    height: 100%;
+}
+
+ /* projects  clients*/
+
+.clients{
+    padding: 0px 120px 0px 70px;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.clients .client-wrapper{
+    display: flex;
+    width: 100%;
+    padding-top: 120px;
+    padding-bottom:70px;
+}
+
+.clients .client-wrapper .testimonials-1{
+ width: 42%;
+ padding-top: 100px;
+}
+
+.clients .client-wrapper .testimonials-1 .testi-heading{
+    position: relative;
+}
+
+.clients .client-wrapper .testimonials-1 .testi-heading h1{
+    font-size: 155px;
+    font-weight: 600;
+    font-family: 'Hind Madurai', sans-serif;
+    color: rgb(211, 211, 211,0.2);
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+
+.clients .client-wrapper .testimonials-1 .testi-heading h2{
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 100px;
+    left: 85px;
+}
+
+.clients .client-wrapper .testimonials-1 .testi-info{
+    padding-left: 96px;
+    margin-bottom: 50px;
+}
+
+.clients .client-wrapper .testimonials-1 .testi-info p{
+    font-size: 19px;
+    font-family: 'Hind Madurai', sans-serif;
+    color: #94979D;
+}
+
+.clients .client-wrapper .testimonials-1 .testi-hover{
+    width: 16%;
+    margin-left: 96px;
+    cursor: pointer;
+    position: relative;
+}
+
+.clients .client-wrapper .testimonials-1 .testi-hover p{
+    font-size: 19px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 600;
+    color: #9799A8;
+    
+}
+
+.clients .client-wrapper .testimonials-1 .testi-hover p::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #E47312;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    opacity: 0;
+}
+
+.clients .client-wrapper .testimonials-1 .testi-hover:hover p::after{
+    opacity: 1;
+}
+
+/* testimonials-2 */
+
+.clients .client-wrapper .testimonials-2{
+    display: flex;
+    width: 58%;
+    padding-left: 40px;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair1{
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-1{
+    width: 390px;
+    height: 320px;
+    background-color: white;
+    margin-right: 25px;
+    margin-bottom: 75px;
+    position: relative;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-1 > .testimonial-upper{
+     text-align: center;
+     padding-top: 75px;
+     margin-bottom: 10px;
+}
+
+.clients .client-wrapper .testimonials-2  .testimonial-pair1 .testimoinalblock-1 > .testimonial-upper p{
+    font-size: 19px;
+    font-family: 'Hind Madurai', sans-serif;
+    color: #9799A8;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-1 > .testimonial-upper .bold{
+    font-size: 19px;
+    font-family: 'Hind Madurai', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-1 > .testmoinal-p{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-1 > .testmoinal-p > p{
+    font-size: 20px;
+    font-family: 'Hind Madurai', sans-serif;
+    color: #9799A8;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-1 > .float-mark{
+    width: 75px;
+    height: 75px;
+    background-image: linear-gradient(8deg, #ff6361, #e47312);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -43px;
+    left: 160px;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-1 > .float-mark p{
+    font-size: 70px;
+    color: white;  
+    margin-top: 30px; 
+}
+
+/* ------------------------------------------- */
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-2{
+    width: 390px;
+    height: 320px;
+    background-color: white;
+    margin-right: 25px;
+    margin-bottom:75px;
+    position: relative;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-2 > .testimonial-upper{
+     text-align: center;
+     padding-top: 75px;
+     margin-bottom: 10px;
+     text-align: center;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-2 > .testimonial-upper p{
+    font-size: 19px;
+    font-family: 'Hind Madurai', sans-serif;
+    color: #9799A8;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-2 > .testimonial-upper .bold{
+    font-size: 19px;
+    font-family: 'Hind Madurai', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-2 > .testmoinal-p{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-2 > .testmoinal-p > p{
+    font-size: 20px;
+    font-family: 'Hind Madurai', sans-serif;
+    color: #9799A8;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-2 > .float-mark{
+    width: 75px;
+    height: 75px;
+    background-image: linear-gradient(8deg, #ff6361, #e47312);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -43px;
+    left: 160px;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-2 > .float-mark p{
+    font-size: 70px;
+    color: white;  
+    margin-top:30px; 
+}
+
+/* ------------------------------------------- */
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair2 {
+    margin-right: 30px;
+    margin-bottom: 30px;
+    margin-top: 150px;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-3{
+    width: 390px;
+    height: 320px;
+    background-color: white;
+    margin-right: 25px;
+    margin-bottom: 75px;
+    position: relative;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-3 > .testimonial-upper{
+     text-align: center;
+     padding-top: 75px;
+     margin-bottom: 10px;
+     text-align: center;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-3 > .testimonial-upper p{
+    font-size: 19px;
+    font-family: 'Hind Madurai', sans-serif;
+    color: #9799A8;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-3 > .testimonial-upper .bold{
+    font-size: 19px;
+    font-family: 'Hind Madurai', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-3 > .testmoinal-p{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-3 > .testmoinal-p > p{
+    font-size: 20px;
+    font-family: 'Hind Madurai', sans-serif;
+    color: #9799A8;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-3 > .float-mark{
+    width: 75px;
+    height: 75px;
+    background-image: linear-gradient(8deg, #ff6361, #e47312);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -43px;
+    left: 160px;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-3 > .float-mark p{
+    font-size: 70px;
+    color: white;
+    margin-top: 30px;   
+}
+
+/* ------------------------------------------- */
+
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-4{
+    width: 390px;
+    height: 320px;
+    background-color: white;
+    margin-right: 25px;
+    margin-bottom: 75px;
+    position: relative;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-4 > .testimonial-upper{
+     text-align: center;
+     padding-top: 75px;
+     margin-bottom: 10px;
+     text-align: center;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-4 > .testimonial-upper p{
+    font-size: 19px;
+    font-family: 'Hind Madurai', sans-serif;
+    color: #9799A8;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-4 > .testimonial-upper .bold{
+    font-size: 19px;
+    font-family: 'Hind Madurai', sans-serif;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-4 > .testmoinal-p{
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: center;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-4 > .testmoinal-p > p{
+    font-size: 20px;
+    font-family: 'Hind Madurai', sans-serif;
+    color: #9799A8;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-4 > .float-mark{
+    width: 75px;
+    height: 75px;
+    background-image: linear-gradient(8deg, #ff6361, #e47312);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -43px;
+    left: 160px;
+}
+
+.clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-4 > .float-mark p{
+    font-size: 70px;
+    color: white;  
+    margin-top: 30px;
+}
+
+/* blogs */
+.blogposts{
+    padding: 0px 110px 0px 90px;
+    margin-bottom: 160px;
+}
+
+.blogposts .blogpost-heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.blogposts .blogpost-heading .blogpost-head-part{
+    position: relative;
+}
+
+.blogposts .blogpost-heading .blogpost-head-part h1{
+    font-size: 155px;
+    font-weight: 600;
+    font-family: 'Hind Madurai', sans-serif;
+    color: rgb(211, 211, 211,0.2);
+    letter-spacing: 7px;
+    text-transform: uppercase;
+}
+
+.blogposts .blogpost-heading .blogpost-head-part h2{
+    font-size: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: 'Hind Madurai', sans-serif;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 102px;
+    left: 84px;
+}
+
+.blogposts .blogpost-heading .blogpost-head-hover{
+    margin-right: 50px;
+    cursor: pointer;
+    position: relative;
+}
+
+.blogposts .blogpost-heading .blogpost-head-hover p{
+    font-size: 17px;
+    font-family: 'Hind Madurai', sans-serif;
+    color: #919399;
+    text-transform: uppercase;
+}
+
+.blogposts .blogpost-heading .blogpost-head-hover p::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #E47312;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    opacity: 0;
+}
+
+.blogposts .blogpost-heading .blogpost-head-hover:hover p::after{
+    opacity: 1;
+}
+
+.blogposts .blogpost-container{
+    padding: 0px 30px 0px 100px;
+    display: flex;
+}
+
+.blogposts .blogpost-container .blogpost1{
+    position: relative;
+    width: 480px;
+    margin-right: 25px;
+}
+
+.blogposts .blogpost-container .blogpost1 > .img-contain{
+    width: 100%;
+    height: 350px;
+}
+
+.blogposts .blogpost-container .blogpost1 > .img-contain > img{
+    width: 100%;
+    height: 100%;
+}
+
+.blogposts .blogpost-container .blogpost1 > .blog-info{
+    background-image: linear-gradient(158deg, #e47312, #ff6361);
+    padding: 35px;
+}
+
+.blogposts .blogpost-container .blogpost1 > .blog-info > h3{
+    color: white;
+    font-size: 21px;
+    font-family: 'Hind Madurai', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding-bottom: 15px;
+}
+
+
+.blogposts .blogpost-container .blogpost1 > .blog-info > p{
+    color: rgb(221, 211, 211);
+    font-size: 19px;
+    font-family: 'Hind Madurai', sans-serif;
+    line-height: 1.7;
+    
+}
+
+.blogposts .blogpost-container .blogpost1 > .blog-info .blog-hover{ 
+    width: 22%;
+    position: relative;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.blogposts .blogpost-container .blogpost1 > .blog-info .blog-hover p{
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: 'Hind Madurai', sans-serif;
+}
+
+.blogposts .blogpost-container .blogpost1 > .blog-info .blog-hover p::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    opacity: 0.5;
+}
+
+.blogposts .blogpost-container .blogpost1 > .blog-info .blog-hover:hover p::after{
+    opacity: 1;
+}
+
+.blogposts .blogpost-container .blogpost1 > .blogposted-date{
+    width: 90px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 9px;
+    right: -3px;
+}
+
+.blogposts .blogpost-container .blogpost1 > .blogposted-date .cover-1{
+   padding: 30px;
+   background-image: linear-gradient(158deg, #e47312, #ff6361);
+}
+
+.blogposts .blogpost-container .blogpost1 > .blogposted-date .cover-1 p{
+    font-size: 24px;
+    color: white;
+}
+
+
+.blogposts .blogpost-container .blogpost1 > .blogposted-date .cover-2{
+    padding: 15px 28px;
+    background-color: white;
+}
+
+.blogposts .blogpost-container .blogpost1 > .blogposted-date .cover-2 p{
+    font-size: 16px;
+    color: rgb(195, 192, 192);
+    text-transform: uppercase;
+    font-family: 'Hind Madurai', sans-serif;
+}
+/* companies */
+
+.companies{
+    margin: 0px 40px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: linear-gradient(56deg, #e47312, #ff6361);
+    padding: 90px 40px;
+   
+}
+
+.companies .com-1{
+    color: white;
+    font-size: 21px;
+    font-family: 'Hind Madurai', sans-serif;
+    margin-right: 25px;
+}
+
+.companies .com-2{
+    color: white;
+    font-size: 26px;
+    letter-spacing: 3px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 25px;
+}
+
+.companies .com-3{
+    color: white;
+    font-size: 26px;
+    letter-spacing: 3px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 70px;
+}
+
+/* footer */
+
+.footer{
+    margin: 0px 40px;
+    padding: 0px 90px;
+    position: relative; 
+}
+
+.footer .contact-container{
+    padding: 100px 50px 200px 60px;
+    display: flex;
+    width: 100%;
+    background-color: #0A1229;
+}
+
+.footer .contact-container .aboutnukk{
+    width: 30%;
+    margin-right: 65px;
+}
+
+.footer .contact-container .aboutnukk .up{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footer .contact-container .aboutnukk .up p{
+    font-size: 20px;
+    font-family: 'Hind Madurai', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    margin-right: 15px;
+}
+
+.footer .contact-container .aboutnukk .up .line{
+    width: 230px;
+    height: 1px;
+    background-color: #E47312;
+}
+
+.footer .contact-container .aboutnukk .mid{
+    width: 82%;
+    margin-bottom: 40px;
+}
+
+.footer .contact-container .aboutnukk .mid p{
+    color: white;
+    font-size: 18px;
+    font-family: 'Hind Madurai', sans-serif;
+    line-height: 1.8;
+}
+
+.footer .contact-container .aboutnukk .last{
+    width: 23%;
+    position: relative;
+    cursor: pointer;
+}
+
+.footer .contact-container .aboutnukk .last p{
+    color: white;
+    font-size: 17px;
+    font-family: 'Hind Madurai', sans-serif;
+    text-transform: uppercase;
+}
+
+.footer .contact-container .aboutnukk .last p::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    opacity: 0;
+}
+
+.footer .contact-container .aboutnukk .last:hover p::after{
+    opacity: 1;
+}
+
+.footer .contact-container .serve{
+    width: 30%;
+    margin-right: 65px;
+}
+
+.footer .contact-container .serve .up{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footer .contact-container .serve .up > p{
+    font-size: 20px;
+    font-family: 'Hind Madurai', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    margin-right: 15px;
+}
+
+.footer .contact-container .serve .up > .line{
+    width: 230px;
+    height: 1px;
+    background-color: #E47312;
+}
+
+.footer .contact-container .serve .diff-sec .h-1{
+    width: 35%;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 18px;
+}
+
+
+.footer .contact-container .serve .diff-sec .h-1 p{
+    color: white;
+    font-size: 17px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer .contact-container .serve .diff-sec .h-1 p::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    opacity: 0;
+}
+
+.footer .contact-container .serve .diff-sec .h-1:hover p::after{
+    opacity: 1;
+}
+
+
+.footer .contact-container .serve .diff-sec .h-2{
+    width: 27%;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 18px;
+}
+
+
+.footer .contact-container .serve .diff-sec .h-2 p{
+    color: white;
+    font-size: 17px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer .contact-container .serve .diff-sec .h-2 p::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    opacity: 0;
+}
+
+.footer .contact-container .serve .diff-sec .h-2:hover p::after{
+    opacity: 1;
+}
+
+-------
+
+.footer .contact-container .serve .diff-sec .h-1:hover p::after{
+    opacity: 1;
+}
+
+
+.footer .contact-container .serve .diff-sec .h-3{
+    width: 27%;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 18px;
+}
+
+
+.footer .contact-container .serve .diff-sec .h-3 p{
+    color: white;
+    font-size: 17px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer .contact-container .serve .diff-sec .h-3 p::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    opacity: 0;
+}
+
+.footer .contact-container .serve .diff-sec .h-3:hover p::after{
+    opacity: 1;
+}
+
+.footer .contact-container .serve .diff-sec .h-1:hover p::after{
+    opacity: 1;
+}
+
+
+.footer .contact-container .serve .diff-sec .h-4{
+    width: 24%;
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 18px;
+}
+
+
+.footer .contact-container .serve .diff-sec .h-4 p{
+    color: white;
+    font-size: 17px;
+    font-family: 'Hind Madurai', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.footer .contact-container .serve .diff-sec .h-4 p::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    opacity: 0;
+}
+
+.footer .contact-container .serve .diff-sec .h-4:hover p::after{
+    opacity: 1;
+}
+
+.footer .contact-container .contact-us{
+    width: 30%;
+    margin-right: 65px;
+}
+
+.footer .contact-container .contact-us .up{
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.footer .contact-container .contact-us .up > p{
+    font-size: 20px;
+    font-family: 'Hind Madurai', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
+    margin-right: 15px;
+}
+
+.footer .contact-container .contact-us .up > .line{
+    width: 230px;
+    height: 1px;
+    background-color: #E47312;
+}
+
+.footer .contact-container .contact-us .phone{
+    margin-bottom: 40px;
+}
+
+.footer .contact-container .contact-us .phone .phone-tog{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer .contact-container .contact-us .phone .phone-tog i{
+    font-size: 20px;
+    color: white;
+    margin-right: 25px;
+}
+
+.footer .contact-container .contact-us .phone .phone-tog span{
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.footer .contact-container .contact-us .phone p{
+    font-size: 23px;
+    color: #919399;
+    padding-left: 50px;
+}
+
+.footer .contact-container .contact-us .time{
+    margin-bottom: 40px;
+}
+
+.footer .contact-container .contact-us .time .time-tog{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer .contact-container .contact-us .time .time-tog i{
+    font-size: 20px;
+    color: white;
+    margin-right: 25px;
+}
+
+.footer .contact-container .contact-us .time .time-tog span{
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.footer .contact-container .contact-us .time p{
+    font-size: 23px;
+    color: #919399;
+    padding-left: 50px;
+}
+
+.footer .contact-container .contact-us .email{
+    margin-bottom: 40px;
+}
+
+.footer .contact-container .contact-us .email .email-tog{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.footer .contact-container .contact-us .email .email-tog i{
+    font-size: 20px;
+    color: white;
+    margin-right: 25px;
+}
+
+.footer .contact-container .contact-us .email .email-tog span{
+    font-size: 18px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.footer .contact-container .contact-us .email p{
+    font-size: 23px;
+    color: #919399;
+    padding-left: 50px;
+}
+
+.last-logo-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 56px 48px;
+    background-color: #e47312;
+    position: absolute;
+    left: 160px;
+    bottom: 0;
+}
+
+.last-logo-container .last-logo{
+    width: 108px;
+    height: 26px;
+}
+
+.last-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* media queries */
+
+@media screen and (max-width:991px) {
+    .banner{
+        margin: 0px;
+        padding-left:0;
+        padding-right:0;
+        background-size: contain;
+        height: 800px;
+    }
+    .navbar{
+        display: none;
+    }
+    .navbar-2{
+        display: flex;
+        margin-bottom: 70px;
+    }
+
+    .banner-heading{
+        padding: 50px 25px;
+    }
+    .banner .main-heading{
+        margin-bottom: 20px;
+    }
+    .banner .main-heading h1{
+        font-size: 50px;
+    }
+    .banner .head-para p{
+        font-size: 15px;
+    }
+    .banner .info{
+        width: 100%;
+        top: 510px;
+        bottom: 0px;
+        padding: 17px 50px 0px 50px;
+      }
+      .banner .info-wrapper{
+        display: flex;
+        width: 100%;
+        padding: 30px 0px;
+        justify-content: end;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .banner .info-wrapper .info-item{
+        padding: 27px 30px 27px 30px;
+    }
+    
+    .banner .info-wrapper .info-2{
+       padding-left:90px;
+    }
+    .banner .vertical-row{
+        top:260px;
+        padding: 9px;
+    }
+    .banner .vertical-row .v-item a i{
+        font-size: 17px;
+    }
+
+    /* services */
+    .services{
+        margin: 100px 0px 0px 0px;
+        padding-left: 5%;
+        padding-right: 5%;
+        margin-bottom: 50px;
+    }
+    .services .sub-services{
+        padding-top: 0px;
+      }   
+    .services .sub-services .services-header h1{
+        font-size: 90px;
+    }
+
+    .services .sub-services .services-header h2{
+        font-size: 34px; 
+        font-weight: 400;
+        top: 65px;
+        left: 10px;
+        }
+    .services .sub-services .view{
+        margin-right: 0px;
+        }
+    .services .sub-services .view p{
+        font-size: 17px;
+    }
+    .professions-wrapper{
+        display: flex;
+        width: 97%;
+        padding-left: 0px ;
+        }
+    .professions-wrapper .profession{
+        width: 23%;
+        margin-right: 40px;
+    }
+
+    .professions-wrapper .profession .prof-logo{
+        width: 80px;
+        height: 80px;
+        margin-bottom: 20px;
+    }
+    .professions-wrapper .profession .prof-sub-heading p{
+        font-size: 15px;
+        font-weight: 400;
+
+    }
+
+    .professions-wrapper .profession .click{
+        width: 58%;
+    }
+    
+    .professions-wrapper .profession .click p{
+        font-size: 13px;
+    }
+
+    /* about */
+    .about{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+
+    .about .img-container {
+        width: 85%;
+        padding-top: 0px;
+        margin-bottom: 50px;
+    }
+    .about .about-info{
+        width: 100%;
+        padding-left: 0px;
+    }
+    .about .about-info .about-i-heading h1{
+        font-size: 80px;
+        font-weight: 400;
+    }
+    
+    .about .about-info .about-i-heading h2{
+        font-size: 29px;
+        top: 50px;
+        left: 10px;
+    }
+    .about .about-info .about-i-p1{
+        padding-left: 0px;
+        margin-bottom: 20px;
+    }
+    
+    .about .about-info .about-i-p1 p{
+        font-size: 16px;
+    }
+    
+    .about .about-info .about-i-p2{
+        padding-left: 0px;
+        margin-bottom: 50px;
+    }
+    
+    .about .about-info .about-i-p2 p{
+        font-size: 16px;
+    }
+    .about .about-info .about-i-click{
+        width: 17%;
+        padding-left: 0px;
+    }
+    .work-expo{
+        padding-left: 0px;
+        padding-right: 0px;
+        margin-top: 120px;
+    }
+    .work-expo .work-expo-container .work-info{
+        padding: 0px 10px;
+        width: 24%;
+    }
+    
+    .work-expo .work-expo-container .work-info .work-wrapper{
+        padding-right: 0px;
+    }
+    .work-expo .work-expo-container .work-info .work-wrapper .work-no{
+        margin-bottom: 10px;
+    }    
+    .work-expo .work-expo-container .work-info .work-wrapper .work-no p{
+        font-size: 60px;
+    }
+    .work-expo .work-expo-container .work-info .work-wrapper .work-details{
+        margin-bottom: 10px; 
+    }
+    
+    .work-expo .work-expo-container .work-info .work-wrapper .work-details p{
+        font-size: 15px;
+    }
+    /* projects */
+    .Projects{
+        margin: 0px 0px 0px 0px;
+    }
+    .Projects .projects-heading{
+        padding:0px 15px 0px 20px;
+       padding-top: 50px;
+    }
+    .Projects .projects-heading .project-ph > h1{
+        font-size: 80px;
+        letter-spacing: 3px;
+    }
+    .Projects .projects-heading .project-ph > h2{
+        font-size: 36px;
+        font-weight: 400;
+        top: 41px;
+        left: 4px;
+    }
+    .Projects .projects-heading .view p{
+        font-size: 13px;
+    }
+    .view-projects .vp-item{
+        width: 31%;
+        height: 315px; 
+    }
+    .view-projects .vp-item .vp-hover{
+        width: 115px;
+        height: 115px;
+        top: 90px;
+        left: 102px;
+    }
+    
+    .banner-2{
+        height: 26vh;
+    }
+    
+    .banner-2 .heading{
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    
+    .banner-2 .heading h2{
+        font-size: 28px;
+        text-transform: uppercase;
+        font-family: 'Hind Madurai', sans-serif;
+        letter-spacing: 1px;
+        font-weight: 600;
+        color: #FFFFFF;
+    }
+    .banner-2 .quote{
+        text-align: center;
+        margin-bottom: 60px;
+    }
+    .banner-2 .quote p{
+        font-size: 18px;
+    }
+    .banner-2 .click-h{
+        width: 18%;
+    }
+    .banner-2 .click-h p{
+        font-size: 16px;
+    }
+    .professionals{
+        padding: 0px 40px 0px 40px;
+        margin-bottom: 120px;
+    }
+
+    /* professions */
+
+    .professionals .prof-heading .prof-hp-1 h1{
+        font-size: 80px;
+    }
+    
+    .professionals .prof-heading .prof-hp-1 h2{
+        font-size: 34px;
+        font-weight: 400;
+        top: 40px;
+        left: 15px;
+    }
+    .professionals .prof-heading .prof-hp-2{
+        margin-top: 22px;
+        margin-right: 0px;
+    }
+    .professionals .prof-heading .prof-hp-2 p{
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .professionals-view{
+        padding: 0px;
+    }
+    .professionals-view .pfv-container .pfv-wrapper{
+        width: 27%;
+        margin-right: 20px;
+        height: 230px;
+    }
+
+    .professionals-view .pfv-container .pfv-wrapper .pfv-img-wrapper-1{
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .professionals-view .pfv-container .pfv-wrapper .pfv-img-wrapper-2{
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .professionals-view .pfv-container .pfv-wrapper .pfv-img-wrapper-3{
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .professionals-view .pfv-container .pfv-wrapper .pfv-img-wrapper-4{
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+    }
+    .professionals-view .pfv-container .pfv-wrapper .pfv-info > .pfv-name{
+        padding-top: 27px;
+        padding-left: 0px;
+    }
+    .professionals-view .pfv-container .pfv-wrapper .pfv-info > .pfv-name p{
+        font-size: 20px;
+        font-weight: 600;
+    }
+    .professionals-view .pfv-container .pfv-wrapper .pfv-info > .pfv-post{
+        padding-top: 10px;
+        padding-left: 0px;
+        padding-bottom: 40px;
+    }
+    .professionals-view .pfv-container .pfv-wrapper .pfv-vertical-row{
+        right: 1px;
+        bottom: -124px; 
+    }
+
+    /* clinets */
+
+    .clients{
+        padding: 0px 40px 0px 40px;
+        margin-bottom: 0px;
+        position: relative;
+    }
+    .clients .client-wrapper{
+        display: flex;
+       flex-direction: column;
+       padding-top: 0px;
+       padding-bottom:0px;
+    }
+    
+    .clients .client-wrapper .testimonials-1{
+     width: 100%;
+     padding-top: 100px;
+     padding-left: 10px;
+     margin-bottom: 50px;
+    
+    }
+    .clients .client-wrapper .testimonials-1 .testi-heading h1{
+        font-size: 85px;
+    }
+    .clients .client-wrapper .testimonials-1 .testi-heading h2{
+        font-size: 34px;
+        font-weight: 400;
+        top: 45px;
+        left: 10px;
+    }
+    .clients .client-wrapper .testimonials-1 .testi-info{
+        width: 100%;
+        padding-left: 0px;
+        padding-top: 40px;
+        line-height: 0.9;
+        margin-bottom: 0px;
+        padding-bottom: 30px;
+    }
+    .clients .client-wrapper .testimonials-1 .testi-info p{
+        font-size: 17px;
+    }
+    .clients .client-wrapper .testimonials-1 .testi-hover{
+        width: 12%;
+        margin-bottom: 60px;
+        margin-left: 0px;
+    }
+    .clients .client-wrapper .testimonials-1 .testi-hover p{
+        font-size: 17px;
+    }
+    .clients .client-wrapper .testimonials-2{
+        width: 100%;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-1{
+        height: 280px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-1 > .testimonial-upper{
+        padding-top: 50px;
+    }
+    .clients .client-wrapper .testimonials-2  .testimonial-pair1 .testimoinalblock-1 > .testimonial-upper p{
+        font-size: 17px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-1 > .testmoinal-p > p{
+        font-size: 18px;
+    }
+
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-2{
+        height: 280px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-2 > .testimonial-upper{
+        padding-top: 50px;
+    }
+    .clients .client-wrapper .testimonials-2  .testimonial-pair1 .testimoinalblock-2 > .testimonial-upper p{
+        font-size: 17px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-2 > .testmoinal-p > p{
+        font-size: 18px;
+    }
+
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-3{
+        height: 280px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-3 > .testimonial-upper{
+        padding-top: 50px;
+    }
+    .clients .client-wrapper .testimonials-2  .testimonial-pair1 .testimoinalblock-3 > .testimonial-upper p{
+        font-size: 17px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-3 > .testmoinal-p > p{
+        font-size: 18px;
+    }
+
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-4{
+        height: 280px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-4 > .testimonial-upper{
+        padding-top: 50px;
+    }
+    .clients .client-wrapper .testimonials-2  .testimonial-pair1 .testimoinalblock-4 > .testimonial-upper p{
+        font-size: 17px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-4 > .testmoinal-p > p{
+        font-size: 18px;
+    }
+    /* blogs */
+    .blogposts{
+        padding: 80px 40px 80px 40px;
+        margin-bottom: 0px;
+    }
+
+    .blogposts .blogpost-heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+    }
+    .blogposts .blogpost-heading .blogpost-head-part h1{
+        font-size: 80px;
+        font-weight: 600;
+        font-family: 'Hind Madurai', sans-serif;
+        color: rgb(211, 211, 211,0.2);
+        letter-spacing: 7px;
+        text-transform: uppercase;
+    }
+    
+    .blogposts .blogpost-heading .blogpost-head-part h2{
+        font-size: 30px;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-family: 'Hind Madurai', sans-serif;
+        letter-spacing: 1px;
+        position: absolute;
+        top: 50px;
+        left: 15px;
+    }
+    .blogposts .blogpost-heading .blogpost-head-hover{
+        margin-right: 0px;
+    }
+    .blogposts .blogpost-heading .blogpost-head-hover p{
+        font-size: 15px;
+    }
+    .blogposts .blogpost-container{
+        padding: 0px 0px 0px 0px;
+    }
+    .blogposts .blogpost-container .blogpost1{
+        margin-right: 0px;
+        padding: 0px 10px;
+    }
+    .blogposts .blogpost-container .blogpost1 > .img-contain{
+        width: 100%;
+        height: 250px;
+    }
+    .blogposts .blogpost-container .blogpost1 > .blog-info{
+        padding: 25px 25px 35px 25px;
+    }
+    .blogposts .blogpost-container .blogpost1 > .blog-info > h3{
+        font-size: 18px;
+    }
+    .blogposts .blogpost-container .blogpost1 > .blog-info > p{
+        font-size: 17px;
+    }
+    .blogposts .blogpost-container .blogpost1 > .blog-info .blog-hover{ 
+        width: 39%;
+    }
+    .blogposts .blogpost-container .blogpost1 > .blog-info .blog-hover p{
+        font-size: 15px;
+    }
+    .blogposts .blogpost-container .blogpost1 > .blogposted-date{
+        top: 7px;
+        right: 7px;
+    }
+    /* companies */
+
+    .companies{
+        margin: 0px 0px;
+        padding: 90px 40px;
+    }
+    .companies .com-1{
+        font-size: 15px;
+    }
+    .companies .com-2{
+        font-size: 19px;
+    }
+    .companies .com-3{
+        font-size: 19px;
+    }
+
+    /* footer */
+    .footer{
+        margin: 0px 0px;
+        padding: 0px 0px;
+        position: relative; 
+    }
+    .footer .contact-container .aboutnukk .up p{
+        font-size: 14px;
+    }
+    .footer .contact-container .aboutnukk .last{
+        width: 39%;
+    }
+    .footer .contact-container .aboutnukk .last p{
+        font-size: 15px;
+    }
+    .footer .contact-container .serve .diff-sec .h-1{
+        width: 60%;
+    }
+    .footer .contact-container .serve .diff-sec .h-1 p{
+        font-size: 15px;
+    }
+    .footer .contact-container .serve .diff-sec .h-2{
+        width: 49%;
+    }
+    .footer .contact-container .serve .diff-sec .h-2 p{
+        font-size: 15px;
+    }
+    .footer .contact-container .serve .diff-sec .h-3{
+        width: 49%;
+    }
+    .footer .contact-container .serve .diff-sec .h-3 p{
+        font-size: 15px;
+    }
+    .footer .contact-container .serve .diff-sec .h-4{
+        width: 40%;
+    }
+    .footer .contact-container .serve .diff-sec .h-4 p{
+        font-size: 15px;
+    }
+    .footer .contact-container .contact-us{
+        margin-right: 15px;
+    }
+    .last-logo-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 36px 48px;
+        background-color: #e47312;
+        position: absolute;
+        left: 60px;
+        bottom: 50px;
+    }
+    .footer .contact-container .contact-us .phone p{
+        padding-left: 20px;
+    }
+    .footer .contact-container .contact-us .time p{
+        padding-left: 20px;
+    }
+    .footer .contact-container .contact-us .email p{
+        padding-left: 20px;
+    }
+}
+
+
+@media screen and (max-width:479px) {
+    /* banner */
+    .banner{
+        background-size: contain;
+        height: 39vh;
+        padding-left:0% ;
+        padding-right: 0%;
+    }
+    .navbar-2{
+        height: 60px;
+        margin-bottom: 40px;
+    }
+    .navbar-2 .logo-2{
+        width: 170px;
+        height: 60px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .banner .info{
+        display: none;
+      }
+    .banner .main-heading h1{
+        font-size: 40px;
+        font-weight: 600;
+    }
+    .banner .head-para{
+        width: 90%;
+    }
+    .banner .head-button button{
+        padding: 15px 27px;
+    }
+    .banner .vertical-row{
+        right: 0;
+        top:247px;
+    }
+    /* services */
+    .services{
+        margin: 0px 0px 0px 0px;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 10%;
+        padding-bottom: 7%;
+        margin-bottom: 0px;
+    }
+    /*  services of sub-services */
+    .services .sub-services{
+      flex-direction: column;
+      margin-bottom: 50px;
+    }
+    .services .sub-services .services-header{
+        padding: 10px 0px;
+    } 
+    .services .sub-services .services-header h1{
+        display: none;
+    }
+    .services .sub-services .services-header h2{
+        font-size: 27px;
+        font-weight: 400;
+        top: 15px;
+        left: 0px;   
+    }
+    .services .sub-services .view{
+        margin-top: 35px;
+        margin-right: 280px;
+    }
+    .services .sub-services .view p{
+        font-size: 17px;
+    }
+    .professions-wrapper .profession .click{
+        margin-bottom: 25px;
+        width: 22%;
+    }
+    /* services  of professions */
+    .profession{
+        margin-bottom: 100px;  
+    }
+    .professions-wrapper{
+        flex-direction: column;
+    }
+    .professions-wrapper .profession{
+        width: 100%;
+        margin-right: 25px;
+        margin-bottom: 40px;
+    }
+    .about .img-container {
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .about .about-info .about-i-heading{
+        margin-bottom: 110px;
+    }
+    .about .about-info .about-i-heading h1{
+        display: none;
+    }
+    .about .about-info .about-i-heading h2{
+        font-size: 27px;
+        top: -50px;
+        left: 0px;
+    }
+    .about .about-info .about-i-p2{
+        margin-bottom: 20px;
+    }
+    .about .about-info .about-i-click{
+        width: 30%;
+    }
+    .about .about-info .about-i-click p{
+        font-size: 15px;
+    }
+    .work-expo{
+        margin-top: 50px;
+    }
+    .work-expo .work-expo-container{
+        flex-direction: column;
+    }
+    .work-expo .work-expo-container .work-info{
+        padding: 10px 0px;
+        width: 100%;
+    }
+    .work-expo .work-expo-container .work-info .work-wrapper .work-no p{
+        font-weight: 400;
+    }
+
+    /* projects */
+    .Projects{
+        margin: 0px 0px 0px 0px;
+        padding: 8% 0% 0% 0%;
+    }
+    .Projects .projects-heading{
+        flex-direction: column;
+        padding: 0px 5%;
+       padding-top: 50px;
+       margin-bottom: 75px;
+    }
+    .Projects .projects-heading .project-ph > h1{
+        display: none;
+    }
+    .Projects .projects-heading .project-ph > h2{
+        font-size: 27px;
+        font-weight: 400;
+        top: -20px;
+        left: -215px;  
+    }
+    .Projects .projects-heading .view{
+        margin-right: 310px;
+    }
+    .Projects .projects-heading .view p{
+        font-size: 12px;
+    }
+    .view-projects{
+        width: 100%;
+        flex-direction: column;
+        padding: 0px 5%;
+    }
+    .view-projects .vp-item{
+        width: 100%;
+        height: 400px; 
+        margin-left: 0px;
+        margin-bottom: 25px;
+    }
+    .view-projects .vp-item .vp-hover{
+        top: 130px;
+        left: 152px;
+    }
+    .banner-2{
+        height: 22vh;
+        padding: 25px 25px;
+        margin-bottom: 90px;
+    }
+    .banner-2 .heading{
+        text-align: left;
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+    .banner-2 .heading h2{
+        font-size: 22px;
+    }
+    .banner-2 .quote{
+        text-align: left;
+        margin-bottom: 40px;
+    }
+    .banner-2 .quote p{
+        font-size: 17px;
+    }
+    .banner-2 .click-h{
+        width: 28%;
+        margin-right: 410px;
+    }
+    .banner-2 .click-h p{
+        font-size: 13px;
+    }
+    /* professionals */
+    .professionals{
+        padding: 0px 5%;
+        margin-bottom: 20px;
+    }
+    .professionals .prof-heading{
+        flex-direction: column; 
+    }
+    .professionals .prof-heading .prof-hp-1 h1{
+        display: none;
+    }
+    .professionals .prof-heading .prof-hp-1 h2{
+        font-size: 27px;
+        font-weight: 400;
+        top: -20px;
+        left: -220px;
+    }
+    .professionals .prof-heading .prof-hp-2{
+        margin-top: 22px;
+        margin-right: 360px;
+    }
+    .professionals .prof-heading .prof-hp-2 p{
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .professionals-view .pfv-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .professionals-view .pfv-container .pfv-wrapper{
+        width: 100%;
+        margin-right: 20px;
+        height: 340px;
+        margin-bottom: 150px;
+    }
+    .professionals-view .pfv-container .pfv-wrapper .pfv-info{
+        padding-left: 20px;
+    }
+    .professionals-view .pfv-container .pfv-wrapper .pfv-info > .pfv-name p{
+        font-size: 17px;
+        font-weight: 400;
+    }
+    .professionals-view .pfv-container .pfv-wrapper .pfv-info > .pfv-post p{
+        font-size: 16px;
+    }
+    .professionals-view .pfv-container .pfv-wrapper .pfv-vertical-row{
+        right: 1px;
+        bottom: -115px; 
+    }
+    .professionals-view .pfv-container .pfv-wrapper .pfv-vertical-row .row-wrapper{
+        padding: 10px;
+    }
+    .professionals-view .pfv-container .pfv-wrapper .pfv-vertical-row .pfv-item{
+        padding: 17px 10px;
+    } 
+
+     /* projects  clients*/
+    .clients{
+        padding: 0px 5%;
+        margin-bottom:0px;
+    }
+    .clients .client-wrapper .testimonials-1{
+        padding-top: 50px;
+        padding-left: 0px;
+    }
+    .clients .client-wrapper .testimonials-1 .testi-heading h1{
+       display: none;
+    }
+    .clients .client-wrapper .testimonials-1 .testi-heading h2{
+        font-size: 25px;
+        font-weight: 400;
+        top: 0px;
+        left: 0px;
+    }
+    .clients .client-wrapper .testimonials-1 .testi-info p{
+        font-size: 16px;
+        line-height: 1.3;
+    }
+    .clients .client-wrapper .testimonials-1 .testi-hover{
+        width: 32%;
+    }
+    /* testimonials-2 */
+    .clients .client-wrapper .testimonials-2{
+        flex-direction: column;
+        width: 88%;
+        padding-left: 5%;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair2 {
+        margin-top: 0px;
+    }
+    /* blogposts */
+    .blogposts .blogpost-container{
+        padding: 0px 30px 0px 0px;
+        flex-direction: column;
+    }
+    .blogposts .blogpost-container .blogpost1{
+        position: relative;
+        width: 95%;
+        margin-right: 0px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-1{
+        height: 250px;
+        margin-right: 25px;
+        margin-bottom: 75px;
+    }
+   .clients .client-wrapper .testimonials-2  .testimonial-pair1 .testimoinalblock-1 > .testimonial-upper p{
+       font-size: 15px;
+   }
+   .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-1 > .testimonial-upper .bold{
+        font-size: 17px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-1 > .testmoinal-p > p{
+        font-size: 14px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-1 > .float-mark{
+        width: 65px;
+        height: 65px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-1 > .float-mark p{
+        font-size: 60px;
+    }
+    /* ------------------------- */
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-2{
+        height: 250px;
+        margin-right: 25px;
+        margin-bottom: 75px;
+    }
+   .clients .client-wrapper .testimonials-2  .testimonial-pair1 .testimoinalblock-2 > .testimonial-upper p{
+       font-size: 15px;
+   }
+   .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-2 > .testimonial-upper .bold{
+        font-size: 17px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-2 > .float-mark{
+        width: 65px;
+        height: 65px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-2 > .testmoinal-p > p{
+        font-size: 14px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair1 .testimoinalblock-2 > .float-mark p{
+        font-size: 60px;
+    }
+    /* ---------------------- */
+    .clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-3{
+        height: 250px;
+        margin-right: 25px;
+        margin-bottom: 75px;
+    }
+   .clients .client-wrapper .testimonials-2  .testimonial-pair2 .testimoinalblock-3 > .testimonial-upper p{
+       font-size: 15px;
+   }
+   .clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-3 > .testimonial-upper .bold{
+        font-size: 17px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-3 > .testmoinal-p > p{
+        font-size: 14px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-3 > .float-mark{
+        width: 65px;
+        height: 65px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-3 > .float-mark p{
+        font-size: 60px;
+    }
+    /* ---------------------------- */
+    .clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-4{
+        height: 250px;
+        margin-right: 25px;
+        margin-bottom: 75px;
+    }
+   .clients .client-wrapper .testimonials-2  .testimonial-pair2 .testimoinalblock-4 > .testimonial-upper p{
+       font-size: 15px;
+   }
+   .clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-4 > .testimonial-upper .bold{
+        font-size: 17px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-4 > .testmoinal-p > p{
+        font-size: 14px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-4 > .float-mark{
+        width: 65px;
+        height: 65px;
+    }
+    .clients .client-wrapper .testimonials-2 .testimonial-pair2 .testimoinalblock-4 > .float-mark p{
+        font-size: 60px;
+    }
+    .blogposts{
+        padding: 10% 5%;
+    }
+    .blogposts .blogpost-heading{
+        flex-direction: column;
+        margin-bottom: 90px;
+        margin-top: 50px;
+    }
+    .blogposts .blogpost-heading .blogpost-head-part h1{
+        display: none;
+    }
+    .blogposts .blogpost-heading .blogpost-head-part h2{
+        font-size: 27px;
+        font-weight: 400;
+        top: -20px;
+        left: -220px;
+    }
+    .blogposts .blogpost-heading .blogpost-head-hover{
+        margin-right: 350px;
+        margin-top: 20px;
+    }
+    .blogposts .blogpost-heading .blogpost-head-hover p{
+        font-size: 14px;
+    }
+    .blogposts .blogpost-container{
+        padding: 0px 0px 0px 0px;
+    }
+    .blogposts .blogpost-container .blogpost1{
+        width: 100%;
+        padding: 0px 10px;
+        margin-bottom: 50px;
+    }
+    .blogposts .blogpost-container .blogpost1 > .blog-info .blog-hover{ 
+        width: 26%;
+    }
+    /* companies */
+    .companies{
+        margin: 0px 0px;
+        flex-direction: column;
+        padding: 50px 50px 0px 50px;
+    }
+    .companies .com-1{
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
+    .companies .com-2{
+        font-size: 19px;
+        margin-bottom: 80px;
+    }
+    .companies .com-3{
+        font-size: 19px;
+        margin-bottom: 40px;
+        margin-right: 26px;
+    }
+    /* footer */
+    .footer{
+        margin: 0px 0px;
+        padding: 0px 0px; 
+    }
+    .footer .contact-container{
+        padding: 10% 5% 0% 5%;
+        flex-direction: column;
+    }.footer .contact-container .aboutnukk{
+        width: 90%;
+        margin-bottom:30px;
+    }
+    .footer .contact-container .aboutnukk .up p{
+        font-size: 21px;
+    }
+    .footer .contact-container .aboutnukk .last{
+        width: 26%;
+    }
+    .footer .contact-container .serve{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .footer .contact-container .serve .diff-sec .h-1{
+        width: 40%;
+    }
+    .footer .contact-container .serve .diff-sec .h-2{
+        width: 32%;
+    }
+    .footer .contact-container .serve .diff-sec .h-3{
+        width: 32%;
+    }
+    .footer .contact-container .serve .diff-sec .h-4{
+        width: 26%;
+    }
+    .footer .contact-container .contact-us{
+        width: 90%;
+        margin-bottom: 140px;
+    }
+    .last-logo-container{
+        padding: 26px 34px;
+        left: 0px;
+        bottom: 0;
+    }
+}
